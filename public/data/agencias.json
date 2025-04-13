@@ -1,0 +1,62 @@
+[
+  {
+    "id":1,
+    "codigo":101,
+    "nome":"Agência Central Vitória",
+    "endereco":"Av. Princesa Isabel, 500, Centro, Vitória - ES"
+  },
+  {
+    "id":2,
+    "codigo":255,
+    "nome":"Agência Praia do Canto",
+    "endereco":"Rua Aleixo Neto, 1204, Praia do Canto, Vitória - ES"
+  },
+  {
+    "id":3,
+    "codigo":340,
+    "nome":"Agência Jardim Camburi",
+    "endereco":"Av. Dr. Herwan Modenese Wanderley, 550, Jardim Camburi, Vitória - ES"
+  },
+  {
+    "id":4,
+    "codigo":412,
+    "nome":"Agência Enseada do Suá",
+    "endereco":"Rua Clóvis Machado, 120, Enseada do Suá, Vitória - ES"
+  },
+  {
+    "id":5,
+    "codigo":588,
+    "nome":"Agência Vila Velha Centro",
+    "endereco":"Av. Luciano das Neves, 980, Centro, Vila Velha - ES"
+  },
+  {
+    "id":6,
+    "codigo":603,
+    "nome":"Agência Jardim da Penha",
+    "endereco":"Rua Comissário Octávio Queiroz, 750, Jardim da Penha, Vitória - ES"
+  },
+  {
+    "id":7,
+    "codigo":771,
+    "nome":"Agência Bento Ferreira",
+    "endereco":"Av. Leitão da Silva, 2005, Bento Ferreira, Vitória - ES"
+  },
+  {
+    "id":8,
+    "codigo":829,
+    "nome":"Agência Laranjeiras Serra",
+    "endereco":"Av. Central, 1500, Parque Res. Laranjeiras, Serra - ES"
+  },
+  {
+    "id":9,
+    "codigo":945,
+    "nome":"Agência Campo Grande",
+    "endereco":"Av. Expedito Garcia, 300, Campo Grande, Cariacica - ES"
+  },
+  {
+    "id":10,
+    "codigo":1150,
+    "nome":"Agência Itaparica",
+    "endereco":"Rod. do Sol, 5000, Ed. Millenium, Itaparica, Vila Velha - ES"
+  }
+]
