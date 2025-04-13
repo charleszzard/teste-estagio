@@ -25,14 +25,14 @@ const ClientDetails: React.FC<ClientDetailsProps> = ({ clientId }) => {
 
   useEffect(() => {
     if (data.contas.length > 0 && cliente) {
-      const clienteContas = data.contas.filter((conta) => conta.cpfCnpjCliente === cliente.cpfCnpj);
+      const clienteContas = data.contas.filter((conta) => conta.cpfCnpjCliente === cliente?.cpfCnpj);
       setContas(clienteContas);
     }
   }, [data.contas, cliente]);
 
   useEffect(() => {
     if (data.agencias.length > 0 && cliente) {
-      const clienteAgencia = data.agencias.find((agencia) => agencia.codigo === cliente.codigoAgencia);
+      const clienteAgencia = data.agencias.find((agencia) => agencia.codigo === cliente?.codigoAgencia);
       setAgencia(clienteAgencia || null);
     }
   }, [data.agencias, cliente]);
@@ -56,12 +56,12 @@ const ClientDetails: React.FC<ClientDetailsProps> = ({ clientId }) => {
       <p>Nome: {cliente.nome}</p>
       <p>CPF/CNPJ: {cliente.cpfCnpj}</p>
       {cliente.rg && <p>RG: {cliente.rg}</p>}
-      <p>Data de Nascimento: {cliente.dataNascimento.toLocaleDateString()}</p>
+      <p>Data de Nascimento: {cliente.dataNascimento?.toLocaleDateString()}</p>
       {cliente.nomeSocial && <p>Nome Social: {cliente.nomeSocial}</p>}
       <p>Email: {cliente.email}</p>
       <p>Endereço: {cliente.endereco}</p>
-      <p>Renda Anual: {cliente.rendaAnual.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
-      <p>Patrimônio: {cliente.patrimonio.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
+      <p>Renda Anual: {cliente.rendaAnual?.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
+      <p>Patrimônio: {cliente.patrimonio?.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
       <p>Estado Civil: {cliente.estadoCivil}</p>
 
       <h4>Contas Bancárias</h4>

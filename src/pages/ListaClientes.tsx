@@ -1,5 +1,5 @@
 // src/pages/ListaClientes.tsx
-import React, { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import useFetchData from "../hooks/useFetchData";
 import { ClienteType } from "../types/Cliente";
 import ClientCard from "../components/ClientCard";
