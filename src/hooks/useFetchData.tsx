@@ -15,14 +15,18 @@ const useFetchData = () => {
   const [error, setError] = useState<string | null>(null);
 
   const fetchCSVData = async (url: string): Promise<string[][]> => {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Erro ao buscar dados: ${response.status}`);
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Erro ao buscar dados: ${response.status}`);
+      }
+      const csvText = await response.text();
+      return csvText.trim().split('\n').map(row => row.split(','));
+    } catch (error) {
+      console.error('Erro ao buscar CSV:', error);
+      throw new Error('Falha ao carregar dados. Tente novamente mais tarde.');
     }
-    const csvText = await response.text();
-    return csvText.trim().split('\n').map(row => row.split(','));
   };
-
   const parseClientes = (csvData: string[][]): Cliente[] => {
     const headers = csvData[0];
     const dataRows = csvData.slice(1);

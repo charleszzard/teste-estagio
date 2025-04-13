@@ -1,17 +1,16 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ListaClientes from './pages/ListaClientes';
-import ClientDetailsPage from './pages/ClientDetailsPage';
+import { Routes, Route } from 'react-router-dom'
+import ListaClientes from './pages/ListaClientes'
+import ClientDetailsPage from './pages/ClientDetailsPage'
 
 function App() {
   return (
-    <Router>
+    <div className="app-container">
       <Routes>
         <Route path="/" element={<ListaClientes />} />
         <Route path="/clientes/:id" element={<ClientDetailsPage />} />
       </Routes>
-    </Router>
-  );
+    </div>
+  )
 }
 
 export default App;

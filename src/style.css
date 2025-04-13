@@ -6,7 +6,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(#38298b, black);
+    background-image: linear-gradient(#38298b, black);
     color: #ffffff;
   }
   

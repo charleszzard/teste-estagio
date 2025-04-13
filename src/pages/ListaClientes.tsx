@@ -1,7 +1,7 @@
 // src/pages/ListaClientes.tsx
 import { useState, useEffect, useMemo } from "react";
 import useFetchData from "../hooks/useFetchData";
-import { ClienteType } from "../types/Cliente";
+import  ClienteType  from "../types/Cliente";
 import ClientCard from "../components/ClientCard";
 import Pagination from "../components/Pagination";
 import SearchFilter from "../components/SearchFilter";
@@ -30,10 +30,14 @@ const ListaClientes = () => {
   };
 
   const filteredClientes = useMemo(() => {
-    return clientes.filter((cliente) =>
-      cliente.nome.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      cliente.cpfCnpj.includes(searchTerm)
-    );
+    return clientes.filter((cliente) => {
+      const nome = cliente.nome || '';
+      const cpfCnpj = cliente.cpfCnpj || '';
+      return (
+        nome.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        cpfCnpj.includes(searchTerm)
+      );
+    });
   }, [clientes, searchTerm]);
 
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
@@ -59,13 +63,13 @@ const ListaClientes = () => {
       <SearchFilter onSearch={handleSearch} /> {/* Passando a prop onSearch */}
       {filteredClientes.length > 0 ? (
         <div>
-          {currentClientes.map((cliente) => (
-            <ClientCard
-              key={cliente.id}
-              cliente={cliente}
-              onSelectClient={handleSelectClient}
-            />
-          ))}
+ {currentClientes.map((cliente) => (
+  <ClientCard
+    key={cliente.id} // ← Adicione esta linha
+    cliente={cliente}
+    onSelectClient={handleSelectClient}
+  />
+))}
           <Pagination
             currentPage={currentPage}
             totalPages={totalPages}

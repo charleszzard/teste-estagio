@@ -1,5 +1,5 @@
 import React from 'react';
-import { ClienteType } from '../types/Cliente';
+import ClienteType  from '../types/Cliente';
 import styles from './ClientCard.module.css'; // Importe o CSS Module
 
 interface ClientCardProps {

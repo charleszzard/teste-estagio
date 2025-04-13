@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ClienteType } from '../types/Cliente';
+import  ClienteType  from '../types/Cliente';
 import Conta from '../types/Conta';
 import Agencia from '../types/Agencia';
 import useFetchData from '../hooks/useFetchData';
