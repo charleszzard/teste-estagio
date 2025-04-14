@@ -18,9 +18,9 @@ const useFetchData = () => {
     const fetchData = async () => {
       try {
         const [clientesRes, contasRes, agenciasRes] = await Promise.all([
-          fetch('https://charleszzard.github.io/teste-estagio/public-api/clientes.json'),
-          fetch('https://charleszzard.github.io/teste-estagio/public-api/contas.json'),
-          fetch('https://charleszzard.github.io/teste-estagio/public-api/agencias.json'),
+          fetch('https://raw.githubusercontent.com/charleszzard/teste-estagio/main/public-api/clientes.json'),
+          fetch('https://raw.githubusercontent.com/charleszzard/teste-estagio/main/public-api/contas.json'),
+          fetch('https://raw.githubusercontent.com/charleszzard/teste-estagio/main/public-api/agencias.json'),
         ]);
 
         if (!clientesRes.ok || !contasRes.ok || !agenciasRes.ok) {
