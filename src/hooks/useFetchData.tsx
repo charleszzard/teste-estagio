@@ -31,17 +31,19 @@ const useFetchData = () => {
         const contasData: Conta[] = await contasRes.json();
         const agenciasData: Agencia[] = await agenciasRes.json();
 
-        // Ajustes de tipo, se necessário (como converter datas)
-        const clientesConvertidos = clientesData.map(c => ({
-          ...c,
-          dataNascimento: new Date(c.dataNascimento),
-        }));
+        const clientesConvertidos = Array.isArray(clientesData)
+          ? clientesData.map(c => ({
+              ...c,
+              dataNascimento: new Date(c.dataNascimento),
+            }))
+          : [];
 
         setData({
           clientes: clientesConvertidos,
-          contas: contasData,
-          agencias: agenciasData,
+          contas: Array.isArray(contasData) ? contasData : [],
+          agencias: Array.isArray(agenciasData) ? agenciasData : [],
         });
+
         setLoading(false);
       } catch (err: any) {
         console.error('Erro ao buscar dados JSON:', err);

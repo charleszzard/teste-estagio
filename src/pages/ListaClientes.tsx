@@ -14,7 +14,7 @@ const ListaClientes = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
 
-  const clientes: ClienteType[] = data?.clientes ?? [];
+  const clientes: ClienteType[] = Array.isArray(data?.clientes) ? data.clientes : [];
 
   const handleSelectClient = (id: string) => {
     navigate(`/clientes/${id}`);
@@ -30,20 +30,24 @@ const ListaClientes = () => {
   };
 
   const filteredClientes = useMemo(() => {
-    return clientes.filter(({ nome = "", cpfCnpj = "" }) =>
-      nome.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      cpfCnpj.includes(searchTerm)
-    );
+    if (!Array.isArray(clientes)) return [];
+    return clientes.filter(({ nome = "", cpfCnpj = "" }) => {
+      // Convertendo para string e tratando valores nulos/undefined
+      const nomeCliente = nome?.toString().toLowerCase() || "";
+      const cpfCnpjCliente = cpfCnpj?.toString() || "";
+      const termoBusca = searchTerm.toLowerCase();
+      
+      return (
+        nomeCliente.includes(termoBusca) ||
+        cpfCnpjCliente.includes(searchTerm) // Mantém case-sensitive para CPF/CNPJ
+      );
+    });
   }, [clientes, searchTerm]);
 
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
   const currentClientes = filteredClientes.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(filteredClientes.length / ITEMS_PER_PAGE);
-
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [searchTerm]);
 
   if (loading) return <p>Carregando dados...</p>;
   if (error) return <p>Erro ao carregar dados: {error}</p>;

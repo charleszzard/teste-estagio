@@ -1,0 +1,36 @@
+.search-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .search-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-group label {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+  
+  .search-input {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+    border: 1px solid #182388;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    min-width: 280px;
+  }
+  
+  .search-input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+  }
+  
