@@ -17,15 +17,6 @@ body {
   padding: 2rem;
 }
 
-/* Títulos */
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #000000;
-  border-bottom: 2px solid #06296e;
-  padding-bottom: 0.5rem;
-}
-
 /* Container principal */
 .lista-clientes-container {
   background-color: #ffffff;
@@ -34,7 +25,6 @@ h2 {
   box-shadow: 0 4px 12px rgb(24, 0, 243);
 }
 
-/* Search Input */
 .search-filter input[type="text"] {
   width: 100%;
   padding: 0.75rem 1rem;
