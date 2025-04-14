@@ -1,0 +1,677 @@
+[
+  {
+    "id":1,
+    "cpfCnpjCliente":111222333019,
+    "tipo":"corrente",
+    "saldo":"5230.50",
+    "limiteCredito":2000.0,
+    "creditoDisponivel":"1500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":2,
+    "cpfCnpjCliente":111222333019,
+    "tipo":"poupanca",
+    "saldo":"15400.75",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":3,
+    "cpfCnpjCliente":22233344402,
+    "tipo":"corrente",
+    "saldo":"8100.00",
+    "limiteCredito":5000.0,
+    "creditoDisponivel":"5000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":4,
+    "cpfCnpjCliente":33344455503,
+    "tipo":"corrente",
+    "saldo":"12500.20",
+    "limiteCredito":10000.0,
+    "creditoDisponivel":"8000.50",
+    "Unnamed: 6":null
+  },
+  {
+    "id":5,
+    "cpfCnpjCliente":33344455503,
+    "tipo":"poupanca",
+    "saldo":"55000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":6,
+    "cpfCnpjCliente":44455566604,
+    "tipo":"corrente",
+    "saldo":"1500.80",
+    "limiteCredito":500.0,
+    "creditoDisponivel":"500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":7,
+    "cpfCnpjCliente":55566677705,
+    "tipo":"poupanca",
+    "saldo":"120500.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":8,
+    "cpfCnpjCliente":66677788806,
+    "tipo":"corrente",
+    "saldo":"-150.25",
+    "limiteCredito":1000.0,
+    "creditoDisponivel":"849.75",
+    "Unnamed: 6":null
+  },
+  {
+    "id":9,
+    "cpfCnpjCliente":66677788806,
+    "tipo":"poupanca",
+    "saldo":"25000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":10,
+    "cpfCnpjCliente":77788899907,
+    "tipo":"corrente",
+    "saldo":"R$ 3.200,00",
+    "limiteCredito":1500.0,
+    "creditoDisponivel":"1500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":11,
+    "cpfCnpjCliente":88899900008,
+    "tipo":"corrente",
+    "saldo":"25600.50",
+    "limiteCredito":15000.0,
+    "creditoDisponivel":"12000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":12,
+    "cpfCnpjCliente":88899900008,
+    "tipo":"poupanca",
+    "saldo":"110000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":13,
+    "cpfCnpjCliente":99900011109,
+    "tipo":"corrente",
+    "saldo":"4800.90",
+    "limiteCredito":2500.0,
+    "creditoDisponivel":"2000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":14,
+    "cpfCnpjCliente":10011122210,
+    "tipo":"corrente",
+    "saldo":"850.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":15,
+    "cpfCnpjCliente":11223344511,
+    "tipo":"corrente",
+    "saldo":"9100.00",
+    "limiteCredito":4000.0,
+    "creditoDisponivel":"3500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":16,
+    "cpfCnpjCliente":11223344511,
+    "tipo":"poupanca",
+    "saldo":"42000.50",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":17,
+    "cpfCnpjCliente":12345678912,
+    "tipo":"corrente",
+    "saldo":"-500.00",
+    "limiteCredito":null,
+    "creditoDisponivel":"2500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":18,
+    "cpfCnpjCliente":134567890133,
+    "tipo":"corrente",
+    "saldo":"6700.30",
+    "limiteCredito":3000.0,
+    "creditoDisponivel":"3000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":19,
+    "cpfCnpjCliente":13456789013,
+    "tipo":"poupanca",
+    "saldo":"18500.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":20,
+    "cpfCnpjCliente":14567890114,
+    "tipo":"poupanca",
+    "saldo":"215000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":21,
+    "cpfCnpjCliente":15678901215,
+    "tipo":"corrente",
+    "saldo":"2900.75",
+    "limiteCredito":1000.0,
+    "creditoDisponivel":"1000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":22,
+    "cpfCnpjCliente":16789012316,
+    "tipo":"corrente",
+    "saldo":"8300.00",
+    "limiteCredito":5000.0,
+    "creditoDisponivel":"4000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":23,
+    "cpfCnpjCliente":16789012316,
+    "tipo":"poupanca",
+    "saldo":"36000.80",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":24,
+    "cpfCnpjCliente":17890123417,
+    "tipo":"corrente",
+    "saldo":"7150.50",
+    "limiteCredito":3500.0,
+    "creditoDisponivel":"3500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":25,
+    "cpfCnpjCliente":18901234518,
+    "tipo":"corrente",
+    "saldo":"10500.00",
+    "limiteCredito":6000.0,
+    "creditoDisponivel":"5500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":26,
+    "cpfCnpjCliente":190123456190,
+    "tipo":"corrente",
+    "saldo":"6950.20",
+    "limiteCredito":3000.0,
+    "creditoDisponivel":"2800.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":27,
+    "cpfCnpjCliente":19012345619,
+    "tipo":"poupanca",
+    "saldo":"29000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":28,
+    "cpfCnpjCliente":20123456720,
+    "tipo":"corrente",
+    "saldo":"1100.00",
+    "limiteCredito":500.0,
+    "creditoDisponivel":"500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":29,
+    "cpfCnpjCliente":21234567821,
+    "tipo":"corrente",
+    "saldo":"14200.80",
+    "limiteCredito":12000.0,
+    "creditoDisponivel":"10000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":30,
+    "cpfCnpjCliente":21234567821,
+    "tipo":"poupanca",
+    "saldo":"95000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":31,
+    "cpfCnpjCliente":22345678922,
+    "tipo":"poupanca",
+    "saldo":"180000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":32,
+    "cpfCnpjCliente":23456789023,
+    "tipo":"corrente",
+    "saldo":"11000.00",
+    "limiteCredito":7000.0,
+    "creditoDisponivel":"7000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":33,
+    "cpfCnpjCliente":24567890124,
+    "tipo":"corrente",
+    "saldo":"3800.40",
+    "limiteCredito":2000.0,
+    "creditoDisponivel":"1800.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":34,
+    "cpfCnpjCliente":24567890124,
+    "tipo":"poupanca",
+    "saldo":"17000.50",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":35,
+    "cpfCnpjCliente":25678901225,
+    "tipo":"corrente",
+    "saldo":"9500.00",
+    "limiteCredito":null,
+    "creditoDisponivel":"4500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":36,
+    "cpfCnpjCliente":26789012326,
+    "tipo":"corrente",
+    "saldo":"2100.90",
+    "limiteCredito":1000.0,
+    "creditoDisponivel":"900.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":37,
+    "cpfCnpjCliente":27890123427,
+    "tipo":"corrente",
+    "saldo":"-800.00",
+    "limiteCredito":8000.0,
+    "creditoDisponivel":"7200.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":38,
+    "cpfCnpjCliente":27890123427,
+    "tipo":"poupanca",
+    "saldo":"78000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":39,
+    "cpfCnpjCliente":28901234528,
+    "tipo":"corrente",
+    "saldo":"7900.00",
+    "limiteCredito":4000.0,
+    "creditoDisponivel":"4000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":40,
+    "cpfCnpjCliente":29012345629,
+    "tipo":"corrente",
+    "saldo":"1750.00",
+    "limiteCredito":500.0,
+    "creditoDisponivel":"300.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":41,
+    "cpfCnpjCliente":29012345629,
+    "tipo":"poupanca",
+    "saldo":"7500.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":42,
+    "cpfCnpjCliente":30123456730,
+    "tipo":"corrente",
+    "saldo":"8500.60",
+    "limiteCredito":4000.0,
+    "creditoDisponivel":"3800.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":43,
+    "cpfCnpjCliente":31234567831,
+    "tipo":"poupanca",
+    "saldo":"250000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":44,
+    "cpfCnpjCliente":32345678932,
+    "tipo":"corrente",
+    "saldo":"9900.00",
+    "limiteCredito":6000.0,
+    "creditoDisponivel":"6000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":45,
+    "cpfCnpjCliente":33456789033,
+    "tipo":"corrente",
+    "saldo":"3500.25",
+    "limiteCredito":2000.0,
+    "creditoDisponivel":"2000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":46,
+    "cpfCnpjCliente":33456789033,
+    "tipo":"poupanca",
+    "saldo":"19500.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":47,
+    "cpfCnpjCliente":34567890134,
+    "tipo":"corrente",
+    "saldo":"10300.00",
+    "limiteCredito":7000.0,
+    "creditoDisponivel":"6500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":48,
+    "cpfCnpjCliente":35678901235,
+    "tipo":"corrente",
+    "saldo":"7600.80",
+    "limiteCredito":3500.0,
+    "creditoDisponivel":"3500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":49,
+    "cpfCnpjCliente":36789012336,
+    "tipo":"corrente",
+    "saldo":"2500.00",
+    "limiteCredito":1000.0,
+    "creditoDisponivel":"800.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":50,
+    "cpfCnpjCliente":36789012336,
+    "tipo":"poupanca",
+    "saldo":"11000.75",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":51,
+    "cpfCnpjCliente":37890123437,
+    "tipo":"corrente",
+    "saldo":"13900.00",
+    "limiteCredito":10000.0,
+    "creditoDisponivel":"9000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":52,
+    "cpfCnpjCliente":38901234538,
+    "tipo":"corrente",
+    "saldo":"9000.50",
+    "limiteCredito":4500.0,
+    "creditoDisponivel":"4500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":53,
+    "cpfCnpjCliente":38901234538,
+    "tipo":"poupanca",
+    "saldo":"41000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":54,
+    "cpfCnpjCliente":39012345639,
+    "tipo":"corrente",
+    "saldo":"6400.00",
+    "limiteCredito":3000.0,
+    "creditoDisponivel":"2900.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":55,
+    "cpfCnpjCliente":40123456740,
+    "tipo":"corrente",
+    "saldo":"11500.00",
+    "limiteCredito":8000.0,
+    "creditoDisponivel":"R$ 8.000,00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":56,
+    "cpfCnpjCliente":40123456740,
+    "tipo":"poupanca",
+    "saldo":"65000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":57,
+    "cpfCnpjCliente":41234567841,
+    "tipo":"corrente",
+    "saldo":"9800.90",
+    "limiteCredito":5000.0,
+    "creditoDisponivel":"4800.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":58,
+    "cpfCnpjCliente":42345678942,
+    "tipo":"poupanca",
+    "saldo":"310000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":59,
+    "cpfCnpjCliente":43456789043,
+    "tipo":"corrente",
+    "saldo":"1200.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":60,
+    "cpfCnpjCliente":44567890144,
+    "tipo":"corrente",
+    "saldo":"7750.00",
+    "limiteCredito":3500.0,
+    "creditoDisponivel":"3000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":61,
+    "cpfCnpjCliente":44567890144,
+    "tipo":"poupanca",
+    "saldo":"29500.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":62,
+    "cpfCnpjCliente":45678901245,
+    "tipo":"corrente",
+    "saldo":"11100.00",
+    "limiteCredito":7500.0,
+    "creditoDisponivel":"7500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":63,
+    "cpfCnpjCliente":46789012346,
+    "tipo":"corrente",
+    "saldo":"3000.70",
+    "limiteCredito":1500.0,
+    "creditoDisponivel":"1500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":64,
+    "cpfCnpjCliente":47890123447,
+    "tipo":"corrente",
+    "saldo":"16500.00",
+    "limiteCredito":15000.0,
+    "creditoDisponivel":"13000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":65,
+    "cpfCnpjCliente":47890123447,
+    "tipo":"poupanca",
+    "saldo":"125000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":66,
+    "cpfCnpjCliente":48901234548,
+    "tipo":"corrente",
+    "saldo":"8300.00",
+    "limiteCredito":4000.0,
+    "creditoDisponivel":"3900.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":67,
+    "cpfCnpjCliente":49012345649,
+    "tipo":"corrente",
+    "saldo":"550.50",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":68,
+    "cpfCnpjCliente":49012345649,
+    "tipo":"poupanca",
+    "saldo":"4000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":69,
+    "cpfCnpjCliente":50123456750,
+    "tipo":"poupanca",
+    "saldo":"190000.00",
+    "limiteCredito":0.0,
+    "creditoDisponivel":"0",
+    "Unnamed: 6":null
+  },
+  {
+    "id":70,
+    "cpfCnpjCliente":55566677705,
+    "tipo":"corrente",
+    "saldo":"10200.00",
+    "limiteCredito":5000.0,
+    "creditoDisponivel":"4000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":71,
+    "cpfCnpjCliente":14567890114,
+    "tipo":"corrente",
+    "saldo":"15100.00",
+    "limiteCredito":10000.0,
+    "creditoDisponivel":"9500.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":72,
+    "cpfCnpjCliente":22345678922,
+    "tipo":"corrente",
+    "saldo":"12800.00",
+    "limiteCredito":8000.0,
+    "creditoDisponivel":"8000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":73,
+    "cpfCnpjCliente":31234567831,
+    "tipo":"corrente",
+    "saldo":"16000.00",
+    "limiteCredito":12000.0,
+    "creditoDisponivel":"R$ 11.000,00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":74,
+    "cpfCnpjCliente":423456789420,
+    "tipo":"corrente",
+    "saldo":"18500.00",
+    "limiteCredito":14000.0,
+    "creditoDisponivel":"14000.00",
+    "Unnamed: 6":null
+  },
+  {
+    "id":75,
+    "cpfCnpjCliente":50123456750,
+    "tipo":"corrente",
+    "saldo":"13200.00",
+    "limiteCredito":9000.0,
+    "creditoDisponivel":"8800.00",
+    "Unnamed: 6":null
+  }
+]
