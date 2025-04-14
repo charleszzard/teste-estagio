@@ -4,7 +4,13 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './style.css'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const rootElement = document.getElementById('root')
+
+if (!rootElement) {
+  throw new Error("Elemento root não encontrado. Verifique se há um <div id='root'></div> no index.html.")
+}
+
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <BrowserRouter>
       <App />

@@ -6,11 +6,16 @@ const ClientDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
 
   if (!id) {
-    return <div>ID do cliente não fornecido</div>;
+    return (
+      <div className="error-message">
+        <p>ID do cliente não fornecido.</p>
+      </div>
+    );
   }
 
   return (
-    <div className="container">
+    <div className="client-details-container">
+      <h2>Detalhes do Cliente</h2>
       <ClientDetails clientId={id} />
     </div>
   );

@@ -1,20 +1,20 @@
-// src/pages/ListaClientes.tsx
 import { useState, useEffect, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import useFetchData from "../hooks/useFetchData";
-import  ClienteType  from "../types/Cliente";
+import ClienteType from "../types/Cliente";
 import ClientCard from "../components/ClientCard";
 import Pagination from "../components/Pagination";
 import SearchFilter from "../components/SearchFilter";
-import { useNavigate } from 'react-router-dom';
 
 const ITEMS_PER_PAGE = 10;
 
 const ListaClientes = () => {
   const { data, loading, error } = useFetchData();
   const [currentPage, setCurrentPage] = useState(1);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
-  const clientes = data.clientes;
+
+  const clientes: ClienteType[] = data?.clientes ?? [];
 
   const handleSelectClient = (id: string) => {
     navigate(`/clientes/${id}`);
@@ -30,14 +30,10 @@ const ListaClientes = () => {
   };
 
   const filteredClientes = useMemo(() => {
-    return clientes.filter((cliente) => {
-      const nome = cliente.nome || '';
-      const cpfCnpj = cliente.cpfCnpj || '';
-      return (
-        nome.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        cpfCnpj.includes(searchTerm)
-      );
-    });
+    return clientes.filter(({ nome = "", cpfCnpj = "" }) =>
+      nome.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      cpfCnpj.includes(searchTerm)
+    );
   }, [clientes, searchTerm]);
 
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
@@ -47,39 +43,34 @@ const ListaClientes = () => {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [filteredClientes]);
+  }, [searchTerm]);
 
-  if (loading) {
-    return <p>Carregando dados...</p>;
-  }
-
-  if (error) {
-    return <p>Erro ao carregar dados: {error}</p>;
-  }
+  if (loading) return <p>Carregando dados...</p>;
+  if (error) return <p>Erro ao carregar dados: {error}</p>;
 
   return (
-    <div>
+    <main className="lista-clientes-container">
       <h2>Lista de Clientes</h2>
-      <SearchFilter onSearch={handleSearch} /> {/* Passando a prop onSearch */}
+      <SearchFilter onSearch={handleSearch} />
       {filteredClientes.length > 0 ? (
-        <div>
- {currentClientes.map((cliente) => (
-  <ClientCard
-    key={cliente.id} // ← Adicione esta linha
-    cliente={cliente}
-    onSelectClient={handleSelectClient}
-  />
-))}
+        <>
+          {currentClientes.map((cliente) => (
+            <ClientCard
+              key={cliente.id}
+              cliente={cliente}
+              onSelectClient={handleSelectClient}
+            />
+          ))}
           <Pagination
             currentPage={currentPage}
             totalPages={totalPages}
             onPageChange={handlePageChange}
           />
-        </div>
+        </>
       ) : (
         <p>Nenhum cliente encontrado.</p>
       )}
-    </div>
+    </main>
   );
 };
 
