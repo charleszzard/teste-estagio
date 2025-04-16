@@ -29,8 +29,19 @@ const ClientDetails: React.FC<ClientDetailsProps> = ({ clientId }) => {
       <p><strong>Data de Nascimento:</strong> {new Date(cliente.dataNascimento).toLocaleDateString()}</p>
       <p><strong>Email:</strong> {cliente.email}</p>
       <p><strong>Endereço:</strong> {cliente.endereco}</p>
-      <p><strong>Renda Anual:</strong> {cliente.rendaAnual.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</p>
-      <p><strong>Patrimônio:</strong> {cliente.patrimonio.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</p>
+
+      <p><strong>Renda Anual:</strong> 
+        {cliente.rendaAnual != null 
+          ? cliente.rendaAnual.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) 
+          : "N/A"}
+      </p>
+
+      <p><strong>Patrimônio:</strong> 
+        {cliente.patrimonio != null 
+          ? cliente.patrimonio.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) 
+          : "N/A"}
+      </p>
+
       <p><strong>Estado Civil:</strong> {cliente.estadoCivil}</p>
 
       <h3>Contas Bancárias</h3>

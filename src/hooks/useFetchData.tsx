@@ -17,10 +17,14 @@ const useFetchData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        // URLs para os dados hospedados diretamente no GitHub como raw
+        const baseURL =
+          'https://raw.githubusercontent.com/charleszzard/teste-estagio/main/public/public-api';
+
         const [clientesRes, contasRes, agenciasRes] = await Promise.all([
-          fetch('https://raw.githubusercontent.com/charleszzard/teste-estagio/main/public/public-api/clientes.json'),
-          fetch('https://raw.githubusercontent.com/charleszzard/teste-estagio/main/public/public-api/contas.json'),
-          fetch('https://raw.githubusercontent.com/charleszzard/teste-estagio/main/public/public-api/agencias.json'),
+          fetch(`${baseURL}/clientes.json`),
+          fetch(`${baseURL}/contas.json`),
+          fetch(`${baseURL}/agencias.json`),
         ]);
 
         if (!clientesRes.ok || !contasRes.ok || !agenciasRes.ok) {
@@ -31,7 +35,7 @@ const useFetchData = () => {
         const contasData: Conta[] = await contasRes.json();
         const agenciasData: Agencia[] = await agenciasRes.json();
 
-        const clientesConvertidos = clientesData.map(c => ({
+        const clientesConvertidos = clientesData.map((c) => ({
           ...c,
           dataNascimento: new Date(c.dataNascimento),
         }));
