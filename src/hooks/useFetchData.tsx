@@ -31,17 +31,15 @@ const useFetchData = () => {
         const contasData: Conta[] = await contasRes.json();
         const agenciasData: Agencia[] = await agenciasRes.json();
 
-        const clientesConvertidos = Array.isArray(clientesData)
-          ? clientesData.map(c => ({
-              ...c,
-              dataNascimento: new Date(c.dataNascimento),
-            }))
-          : [];
+        const clientesConvertidos = clientesData.map(c => ({
+          ...c,
+          dataNascimento: new Date(c.dataNascimento),
+        }));
 
         setData({
           clientes: clientesConvertidos,
-          contas: Array.isArray(contasData) ? contasData : [],
-          agencias: Array.isArray(agenciasData) ? agenciasData : [],
+          contas: contasData,
+          agencias: agenciasData,
         });
 
         setLoading(false);
