@@ -127,16 +127,37 @@ body {
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
-  .app-container {
+@media (max-width: 576px) {
+  .lista-clientes-container {
     padding: 1rem;
   }
 
   .client-card {
-    padding: 1rem;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .pagination button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .client-details-container {
+    padding: 1.25rem;
+  }
+
+  .logo-ban img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 400px) {
+  .search-filter input[type="text"] {
+    font-size: 0.9rem;
+    padding: 0.6rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }

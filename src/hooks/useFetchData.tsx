@@ -17,9 +17,8 @@ const useFetchData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // URLs para os dados hospedados diretamente no GitHub como raw
-        const baseURL =
-          'https://raw.githubusercontent.com/charleszzard/teste-estagio/main/public/public-api';
+        // URL base correta
+        const baseURL = 'https://raw.githubusercontent.com/charleszzard/teste-estagio/main/public/public-api';
 
         const [clientesRes, contasRes, agenciasRes] = await Promise.all([
           fetch(`${baseURL}/clientes.json`),
